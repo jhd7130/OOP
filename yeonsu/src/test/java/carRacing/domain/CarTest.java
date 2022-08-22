@@ -1,5 +1,6 @@
 package carRacing.domain;
 
+import carRacing.utils.Generator;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -22,8 +23,17 @@ class CarTest {
     @Test
     public void carPositionMovingTest() throws Exception {
         Car car = Car.of("hello");
-        car.canMove(4);
+        Generator generator = () -> 4;
+        car.canMove(generator);
         assertThat(car.currentPosition()).isEqualTo(1);
+    }
+
+    @Test
+    public void carPositionDoesNotMovingTest() throws Exception {
+        Car car = Car.of("hello");
+        Generator generator = () -> 3;
+        car.canMove(generator);
+        assertThat(car.currentPosition()).isEqualTo(0);
     }
 
 }

@@ -1,6 +1,7 @@
 package carRacing.domain;
 
 
+import carRacing.utils.Generator;
 import carRacing.wrapper.CarName;
 
 /*
@@ -22,6 +23,16 @@ public class Car {
         return new Car(carName);
     }
 
+    public int currentPosition() {
+        return position;
+    }
+
+    public void canMove(Generator generator) {
+        if (generator.generateNumber() >= 4) {
+            position++;
+        }
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -35,15 +46,5 @@ public class Car {
     @Override
     public int hashCode() {
         return carName != null ? carName.hashCode() : 0;
-    }
-
-    public int currentPosition() {
-        return position;
-    }
-
-    public void canMove(int randomValue) {
-        if (randomValue >= 4) {
-            position++;
-        }
     }
 }
