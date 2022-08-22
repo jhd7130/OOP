@@ -5,7 +5,10 @@ import carRacing.utils.RandomGenerator;
 import carRacing.utils.SplitStringUtil;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /*
@@ -45,5 +48,15 @@ public class Cars {
             gameResultPrint();
             System.out.println();
         }
+        Winner(cars);
     }
+
+    private void Winner(List<Car> cars) {
+        Car winCar = cars.stream().max(Comparator.comparing(Car::currentPosition)).orElseThrow(NoSuchElementException::new);
+        List<Car> collect = cars.stream().filter(car -> car.currentPosition() == winCar.currentPosition()).collect(Collectors.toList());
+        collect.stream().forEach(car -> System.out.println(car.currentCarName()));
+
+    }
+
+
 }

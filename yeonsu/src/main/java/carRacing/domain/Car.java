@@ -1,6 +1,7 @@
 package carRacing.domain;
 
 
+import carRacing.utils.ConsoleOut;
 import carRacing.utils.Generator;
 import carRacing.utils.PositionToDashString;
 import carRacing.wrapper.CarName;
@@ -29,12 +30,16 @@ public class Car {
     }
 
 
-    public String currentPosition() {
+    public String currentPositionToDash() {
         return PositionToDashString.resultDash(position);
     }
 
+    public int currentPosition() {
+        return position;
+    }
+
     public void canMove(Generator generator) {
-        if (generator.generateNumber() >= 4) {
+        if (generator.generateNumber() >= ConsoleOut.CAR_MOVE_NUMBER) {
             position++;
         }
     }
@@ -57,6 +62,6 @@ public class Car {
     @Override
     public String toString() {
         return currentCarName() +
-                " : " + currentPosition();
+                " : " + currentPositionToDash();
     }
 }
