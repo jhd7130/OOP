@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9d0cc013-b66e-4c2b-b254-641db474b16f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeonsu/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/carRacing/domain/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/carRacing/domain/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/carRacing/wrapper/CarName.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/carRacing/wrapper/CarName.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -97,49 +97,14 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="carRacing.domain" />
       <recent name="carRacing.wrapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CarNameTest.carNameLengthOutOfRangeTest">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="carRacing.Application" />
-      <module name="workspace.yeonsu.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="carRacing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="workspace.yeonsu.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BallTest.strike" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="workspace.heedoo.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="baseball.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="baseball" />
-      <option name="MAIN_CLASS_NAME" value="baseball.BallTest" />
-      <option name="METHOD_NAME" value="strike" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CarTest.carPositionMovingTest">
     <configuration name="CarNameTest.carNameLengthInRangeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="workspace.yeonsu.test" />
       <extension name="coverage">
@@ -172,13 +137,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CarTest.carInitPositionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workspace.yeonsu.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carRacing.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="carRacing.domain" />
+      <option name="MAIN_CLASS_NAME" value="carRacing.domain.CarTest" />
+      <option name="METHOD_NAME" value="carInitPositionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarTest.carPositionMovingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workspace.yeonsu.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carRacing.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="carRacing.domain" />
+      <option name="MAIN_CLASS_NAME" value="carRacing.domain.CarTest" />
+      <option name="METHOD_NAME" value="carPositionMovingTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarTest.carSettingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workspace.yeonsu.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carRacing.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="carRacing.domain" />
+      <option name="MAIN_CLASS_NAME" value="carRacing.domain.CarTest" />
+      <option name="METHOD_NAME" value="carSettingTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CarTest.carPositionMovingTest" />
+        <item itemvalue="JUnit.CarTest.carSettingTest" />
+        <item itemvalue="JUnit.CarTest.carInitPositionTest" />
         <item itemvalue="JUnit.CarNameTest.carNameLengthOutOfRangeTest" />
         <item itemvalue="JUnit.CarNameTest.carNameLengthInRangeTest" />
-        <item itemvalue="Application.Application" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="JUnit.BallTest.strike" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +203,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660535903436</updated>
-      <workItem from="1661149627732" duration="2032000" />
+      <workItem from="1661149627732" duration="3044000" />
     </task>
     <servers />
   </component>
