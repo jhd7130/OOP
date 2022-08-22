@@ -2,6 +2,7 @@ package carRacing.domain;
 
 
 import carRacing.utils.Generator;
+import carRacing.utils.PositionToDashString;
 import carRacing.wrapper.CarName;
 
 /*
@@ -23,8 +24,13 @@ public class Car {
         return new Car(carName);
     }
 
-    public int currentPosition() {
-        return position;
+    public String currentCarName() {
+        return carName.toString();
+    }
+
+
+    public String currentPosition() {
+        return PositionToDashString.resultDash(position);
     }
 
     public void canMove(Generator generator) {
@@ -46,5 +52,11 @@ public class Car {
     @Override
     public int hashCode() {
         return carName != null ? carName.hashCode() : 0;
+    }
+
+    @Override
+    public String toString() {
+        return currentCarName() +
+                " : " + currentPosition();
     }
 }
