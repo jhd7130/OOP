@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d0cc013-b66e-4c2b-b254-641db474b16f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/carRacing/domain/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/carRacing/domain/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/carRacing/domain/Cars.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/carRacing/domain/Cars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/carRacing/utils/ConsoleOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/carRacing/utils/ConsoleOut.java" afterDir="false" />
-    </list>
+    <list default="true" id="9d0cc013-b66e-4c2b-b254-641db474b16f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,7 +198,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660535903436</updated>
-      <workItem from="1661149627732" duration="10698000" />
+      <workItem from="1661149627732" duration="11021000" />
     </task>
     <servers />
   </component>
