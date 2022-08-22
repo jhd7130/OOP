@@ -1,5 +1,7 @@
 package carRacing.domain;
 
+import carRacing.utils.Generator;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,10 +14,18 @@ public class Cars {
 
     private List<Car> cars;
 
-    public Cars(List<String> carNames) {
+    private Cars(List<String> carNames) {
         cars = new ArrayList<>();
         for (String carName : carNames) {
             cars.add(Car.of(carName));
         }
+    }
+
+    public Cars of(List<String> carNames) {
+        return new Cars(carNames);
+    }
+
+    public void moveCars(Generator generator) {
+        cars.stream().forEach(car -> car.canMove(generator));
     }
 }

@@ -4,6 +4,6 @@ public class RandomGenerator implements Generator {
 
     @Override
     public int generateNumber() {
-        return 0;
+        return (int)(Math.random() * 10);
     }
 }

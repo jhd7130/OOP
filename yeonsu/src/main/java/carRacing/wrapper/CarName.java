@@ -7,10 +7,14 @@ public class CarName {
     private String name;
 
     public CarName(String name) {
-        if (name.length() > 5) {
+        if (isNotCarName(name)) {
             throw new CarNameOutOfRangeException(ConsoleOut.CAR_NAME_EXCEPTION_MESSAGE);
         }
         this.name = name;
+    }
+
+    private boolean isNotCarName(String name) {
+        return name.length() > ConsoleOut.CAR_NAME_LENGTH;
     }
 
     @Override
