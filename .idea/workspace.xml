@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9d0cc013-b66e-4c2b-b254-641db474b16f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeonsu/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,7 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="package.json" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
@@ -98,17 +98,17 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="positionCalculator.wrapper" />
       <recent name="fuelInjectionUsingInterface.domain" />
       <recent name="fuelInjectionUsingInterface.wrapper" />
       <recent name="fuelInjectionUsingInterface.utils" />
       <recent name="fuelInjection.domain" />
-      <recent name="carRacing.utils" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="JUnit.PositionNumberTest.positionExceptionTest">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.Application" />
       <module name="workspace.yeonsu.main" />
@@ -154,33 +154,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarNameTest.carNameInValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PositionNumberTest.positionExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="workspace.yeonsu.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fuelInjectionUsingInterface.wrapper.*" />
+          <option name="PATTERN" value="positionCalculator.wrapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fuelInjectionUsingInterface.wrapper" />
-      <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.wrapper.CarNameTest" />
-      <option name="METHOD_NAME" value="carNameInValidation" />
+      <option name="PACKAGE_NAME" value="positionCalculator.wrapper" />
+      <option name="MAIN_CLASS_NAME" value="positionCalculator.wrapper.PositionNumberTest" />
+      <option name="METHOD_NAME" value="positionExceptionTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DoubleToStringTest.typeChangeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PositionNumberTest.positionNumberValidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="workspace.yeonsu.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fuelInjectionUsingInterface.utils.*" />
+          <option name="PATTERN" value="positionCalculator.wrapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fuelInjectionUsingInterface.utils" />
-      <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.utils.DoubleToStringTest" />
-      <option name="METHOD_NAME" value="typeChangeTest" />
+      <option name="PACKAGE_NAME" value="positionCalculator.wrapper" />
+      <option name="MAIN_CLASS_NAME" value="positionCalculator.wrapper.PositionNumberTest" />
+      <option name="METHOD_NAME" value="positionNumberValidTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PositionNumberTest.positionExceptionTest" />
+        <item itemvalue="JUnit.PositionNumberTest.positionNumberValidTest" />
         <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.CarCompanyTest.carMemberTest" />
         <item itemvalue="JUnit.CarNameTest.carNameExceptionTest" />
-        <item itemvalue="JUnit.CarNameTest.carNameInValidation" />
-        <item itemvalue="JUnit.DoubleToStringTest.typeChangeTest" />
       </list>
     </recent_temporary>
   </component>
