@@ -23,8 +23,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="package.json" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -40,8 +40,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="YeonFuelInjection" />
-                    <option name="lastUsedInstant" value="1661232097" />
+                    <option name="branchName" value="YeonPositionCalculator" />
+                    <option name="lastUsedInstant" value="1661238378" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
@@ -98,17 +98,17 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="positionCalculator.domain" />
       <recent name="positionCalculator.wrapper" />
       <recent name="fuelInjectionUsingInterface.domain" />
       <recent name="fuelInjectionUsingInterface.wrapper" />
       <recent name="fuelInjectionUsingInterface.utils" />
-      <recent name="fuelInjection.domain" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PositionNumberTest.positionExceptionTest">
+  <component name="RunManager" selected="JUnit.PositionTest.positionSameTest">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.Application" />
       <module name="workspace.yeonsu.main" />
@@ -133,22 +133,6 @@
       <option name="PACKAGE_NAME" value="fuelInjectionUsingInterface.domain" />
       <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.domain.CarCompanyTest" />
       <option name="METHOD_NAME" value="carMemberTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarNameTest.carNameExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="workspace.yeonsu.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fuelInjectionUsingInterface.wrapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fuelInjectionUsingInterface.wrapper" />
-      <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.wrapper.CarNameTest" />
-      <option name="METHOD_NAME" value="carNameExceptionTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,13 +170,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PositionTest.positionSameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workspace.yeonsu.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="positionCalculator.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="positionCalculator.domain" />
+      <option name="MAIN_CLASS_NAME" value="positionCalculator.domain.PositionTest" />
+      <option name="METHOD_NAME" value="positionSameTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PositionTest.positionSameTest" />
         <item itemvalue="JUnit.PositionNumberTest.positionExceptionTest" />
         <item itemvalue="JUnit.PositionNumberTest.positionNumberValidTest" />
         <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.CarCompanyTest.carMemberTest" />
-        <item itemvalue="JUnit.CarNameTest.carNameExceptionTest" />
       </list>
     </recent_temporary>
   </component>

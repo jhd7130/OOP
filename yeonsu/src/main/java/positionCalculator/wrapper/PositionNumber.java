@@ -13,4 +13,19 @@ public class PositionNumber {
         }
         this.number = number;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof PositionNumber)) return false;
+
+        PositionNumber that = (PositionNumber) o;
+
+        return number == that.number;
+    }
+
+    @Override
+    public int hashCode() {
+        return number;
+    }
 }
