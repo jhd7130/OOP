@@ -1,6 +1,7 @@
 package positionCalculator.domain;
 
 import positionCalculator.exception.PositionDuplicationException;
+import positionCalculator.utils.ConsoleOut;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,5 +24,11 @@ public class Positions {
         for (Position eachPosition : paramPositions) {
             positions.add(eachPosition);
         }
+    }
+
+    public void calculateBetweenPosition() {
+        PrintResult printResult = new PrintResult();
+        String result = printResult.report(positions);
+        System.out.println(ConsoleOut.POSITION_EXCEPTION_MESSAGE + result);
     }
 }

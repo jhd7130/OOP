@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9d0cc013-b66e-4c2b-b254-641db474b16f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/domain/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/domain/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/domain/Positions.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/domain/Positions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/utils/ConsoleOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/utils/ConsoleOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/wrapper/PositionNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/wrapper/PositionNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +25,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="package.json" />
-        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -86,6 +90,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="positionCalculator.domain" />
       <recent name="fuelInjection.domain" />
       <recent name="baseball" />
     </key>
@@ -98,26 +103,42 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="positionCalculator.utils" />
       <recent name="positionCalculator.domain" />
       <recent name="positionCalculator.wrapper" />
       <recent name="fuelInjectionUsingInterface.domain" />
       <recent name="fuelInjectionUsingInterface.wrapper" />
-      <recent name="fuelInjectionUsingInterface.utils" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PositionsTest.positionDuplicationExceptionTest">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.Application" />
+  <component name="RunManager" selected="JUnit.PositionCalculatorImplTest.distanceCalculationTest">
+    <configuration name="positionCalculator.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="positionCalculator.Application" />
       <module name="workspace.yeonsu.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fuelInjectionUsingInterface.*" />
+          <option name="PATTERN" value="positionCalculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PositionCalculatorImplTest.distanceCalculationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workspace.yeonsu.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="positionCalculator.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="positionCalculator.utils" />
+      <option name="MAIN_CLASS_NAME" value="positionCalculator.utils.PositionCalculatorImplTest" />
+      <option name="METHOD_NAME" value="distanceCalculationTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,22 +154,6 @@
       <option name="PACKAGE_NAME" value="positionCalculator.wrapper" />
       <option name="MAIN_CLASS_NAME" value="positionCalculator.wrapper.PositionNumberTest" />
       <option name="METHOD_NAME" value="positionExceptionTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PositionNumberTest.positionNumberValidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="workspace.yeonsu.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="positionCalculator.wrapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="positionCalculator.wrapper" />
-      <option name="MAIN_CLASS_NAME" value="positionCalculator.wrapper.PositionNumberTest" />
-      <option name="METHOD_NAME" value="positionNumberValidTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PositionCalculatorImplTest.distanceCalculationTest" />
+        <item itemvalue="Application.positionCalculator.Application" />
         <item itemvalue="JUnit.PositionsTest.positionDuplicationExceptionTest" />
         <item itemvalue="JUnit.PositionTest.positionSameTest" />
         <item itemvalue="JUnit.PositionNumberTest.positionExceptionTest" />
-        <item itemvalue="JUnit.PositionNumberTest.positionNumberValidTest" />
-        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>

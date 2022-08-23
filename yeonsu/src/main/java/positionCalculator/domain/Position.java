@@ -15,6 +15,15 @@ public class Position {
         return new Position(xPos, yPos);
     }
 
+    public int currentXPos() {
+        return xPos.currentNumber();
+    }
+
+    public int currentYPos() {
+        return yPos.currentNumber();
+    }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

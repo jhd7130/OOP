@@ -14,6 +14,10 @@ public class PositionNumber {
         this.number = number;
     }
 
+    public int currentNumber() {
+        return number;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
