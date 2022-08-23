@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9d0cc013-b66e-4c2b-b254-641db474b16f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/fuelInjection/domain/RentCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/fuelInjection/domain/RentCompany.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +23,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -39,12 +40,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="FuelInjection" />
-                    <option name="lastUsedInstant" value="1661221998" />
-                  </RecentBranch>
-                  <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1661165734" />
+                    <option name="lastUsedInstant" value="1661225747" />
                   </RecentBranch>
                 </list>
               </option>
@@ -97,22 +94,23 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="fuelInjectionUsingInterface.domain" />
+      <recent name="fuelInjectionUsingInterface.wrapper" />
+      <recent name="fuelInjectionUsingInterface.utils" />
       <recent name="fuelInjection.domain" />
       <recent name="carRacing.utils" />
-      <recent name="carRacing.domain" />
-      <recent name="carRacing.wrapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RentCompanyTest.report">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="carRacing.Application" />
+      <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.Application" />
       <module name="workspace.yeonsu.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="carRacing.*" />
+          <option name="PATTERN" value="fuelInjectionUsingInterface.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,62 +118,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="fuelInjection.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fuelInjection.Application" />
-      <module name="workspace.yeonsu.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fuelInjection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PositionToDashStringTest.PositionToStringDashStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarCompanyTest.carMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="workspace.yeonsu.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="carRacing.utils.*" />
+          <option name="PATTERN" value="fuelInjectionUsingInterface.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="carRacing.utils" />
-      <option name="MAIN_CLASS_NAME" value="carRacing.utils.PositionToDashStringTest" />
-      <option name="METHOD_NAME" value="PositionToStringDashStringTest" />
+      <option name="PACKAGE_NAME" value="fuelInjectionUsingInterface.domain" />
+      <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.domain.CarCompanyTest" />
+      <option name="METHOD_NAME" value="carMemberTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RentCompanyTest.report" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarNameTest.carNameExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="workspace.yeonsu.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fuelInjection.domain.*" />
+          <option name="PATTERN" value="fuelInjectionUsingInterface.wrapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fuelInjection.domain" />
-      <option name="MAIN_CLASS_NAME" value="fuelInjection.domain.RentCompanyTest" />
-      <option name="METHOD_NAME" value="report" />
+      <option name="PACKAGE_NAME" value="fuelInjectionUsingInterface.wrapper" />
+      <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.wrapper.CarNameTest" />
+      <option name="METHOD_NAME" value="carNameExceptionTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RentCompanyTest.sameObjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarNameTest.carNameInValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="workspace.yeonsu.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fuelInjection.domain.*" />
+          <option name="PATTERN" value="fuelInjectionUsingInterface.wrapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fuelInjection.domain" />
-      <option name="MAIN_CLASS_NAME" value="fuelInjection.domain.RentCompanyTest" />
-      <option name="METHOD_NAME" value="sameObjectTest" />
+      <option name="PACKAGE_NAME" value="fuelInjectionUsingInterface.wrapper" />
+      <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.wrapper.CarNameTest" />
+      <option name="METHOD_NAME" value="carNameInValidation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DoubleToStringTest.typeChangeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workspace.yeonsu.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fuelInjectionUsingInterface.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fuelInjectionUsingInterface.utils" />
+      <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.utils.DoubleToStringTest" />
+      <option name="METHOD_NAME" value="typeChangeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -183,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RentCompanyTest.report" />
-        <item itemvalue="Application.fuelInjection.Application" />
-        <item itemvalue="JUnit.RentCompanyTest.sameObjectTest" />
         <item itemvalue="Application.Application" />
-        <item itemvalue="JUnit.PositionToDashStringTest.PositionToStringDashStringTest" />
+        <item itemvalue="JUnit.CarCompanyTest.carMemberTest" />
+        <item itemvalue="JUnit.CarNameTest.carNameExceptionTest" />
+        <item itemvalue="JUnit.CarNameTest.carNameInValidation" />
+        <item itemvalue="JUnit.DoubleToStringTest.typeChangeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +200,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660535903436</updated>
-      <workItem from="1661149627732" duration="16584000" />
+      <workItem from="1661149627732" duration="21879000" />
     </task>
     <servers />
   </component>

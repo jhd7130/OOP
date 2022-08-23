@@ -8,7 +8,7 @@ public class RentCompany {
 
     private List<Car> cars;
 
-    public RentCompany() {
+    private RentCompany() {
         cars = new ArrayList<>();
     }
 
