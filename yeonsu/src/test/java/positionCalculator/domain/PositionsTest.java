@@ -8,11 +8,13 @@ import positionCalculator.exception.PositionDuplicationException;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PositionsTest {
 
 
+/*
     @DisplayName("중복된 두 개의 위치 값이 주어지면 예외 발생")
     @Test
     public void positionDuplicationExceptionTest() throws Exception {
@@ -27,6 +29,15 @@ class PositionsTest {
         Assertions.assertThatThrownBy(() -> new Positions(positions))
                 .isInstanceOf(PositionDuplicationException.class)
                 .hasMessage("중복된 값이 존재합니다.");
+    }
+*/
+
+    @Test
+    public void positionDuplicationExceptionIntegerListTest() throws Exception {
+        List<Integer> list = Arrays.asList(10, 10, 10, 10);
+
+        assertThatThrownBy(() -> new Positions(list))
+                .isInstanceOf(PositionDuplicationException.class);
     }
 
 }

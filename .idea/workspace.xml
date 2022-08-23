@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9d0cc013-b66e-4c2b-b254-641db474b16f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/domain/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/domain/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/domain/Positions.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/domain/Positions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/utils/ConsoleOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/utils/ConsoleOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/wrapper/PositionNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/wrapper/PositionNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/utils/PositionCalculatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/utils/PositionCalculatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/src/test/java/positionCalculator/domain/PositionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/test/java/positionCalculator/domain/PositionsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +27,8 @@
         <option value="Enum" />
         <option value="package.json" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -113,7 +113,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PositionCalculatorImplTest.distanceCalculationTest">
+  <component name="RunManager" selected="Application.positionCalculator.Application">
     <configuration name="positionCalculator.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="positionCalculator.Application" />
       <module name="workspace.yeonsu.main" />
@@ -143,22 +143,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositionNumberTest.positionExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="workspace.yeonsu.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="positionCalculator.wrapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="positionCalculator.wrapper" />
-      <option name="MAIN_CLASS_NAME" value="positionCalculator.wrapper.PositionNumberTest" />
-      <option name="METHOD_NAME" value="positionExceptionTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PositionTest.positionSameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="workspace.yeonsu.test" />
       <extension name="coverage">
@@ -170,6 +154,22 @@
       <option name="PACKAGE_NAME" value="positionCalculator.domain" />
       <option name="MAIN_CLASS_NAME" value="positionCalculator.domain.PositionTest" />
       <option name="METHOD_NAME" value="positionSameTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PositionsTest.positionDuplicationExceptionIntegerListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workspace.yeonsu.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="positionCalculator.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="positionCalculator.domain" />
+      <option name="MAIN_CLASS_NAME" value="positionCalculator.domain.PositionsTest" />
+      <option name="METHOD_NAME" value="positionDuplicationExceptionIntegerListTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PositionCalculatorImplTest.distanceCalculationTest" />
         <item itemvalue="Application.positionCalculator.Application" />
+        <item itemvalue="JUnit.PositionsTest.positionDuplicationExceptionIntegerListTest" />
+        <item itemvalue="JUnit.PositionCalculatorImplTest.distanceCalculationTest" />
         <item itemvalue="JUnit.PositionsTest.positionDuplicationExceptionTest" />
         <item itemvalue="JUnit.PositionTest.positionSameTest" />
-        <item itemvalue="JUnit.PositionNumberTest.positionExceptionTest" />
       </list>
     </recent_temporary>
   </component>
