@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d0cc013-b66e-4c2b-b254-641db474b16f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +22,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,12 +39,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1661165734" />
+                    <option name="branchName" value="FuelInjection" />
+                    <option name="lastUsedInstant" value="1661221998" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="YeonsuCarRacingGame" />
-                    <option name="lastUsedInstant" value="1661151221" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1661165734" />
                   </RecentBranch>
                 </list>
               </option>
@@ -86,6 +85,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="fuelInjection.domain" />
       <recent name="baseball" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -97,6 +97,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="fuelInjection.domain" />
       <recent name="carRacing.utils" />
       <recent name="carRacing.domain" />
       <recent name="carRacing.wrapper" />
@@ -105,7 +106,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="JUnit.RentCompanyTest.report">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="carRacing.Application" />
       <module name="workspace.yeonsu.main" />
@@ -119,34 +120,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarTest.carPositionDoesNotMovingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="workspace.yeonsu.test" />
+    <configuration name="fuelInjection.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fuelInjection.Application" />
+      <module name="workspace.yeonsu.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="carRacing.domain.*" />
+          <option name="PATTERN" value="fuelInjection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="carRacing.domain" />
-      <option name="MAIN_CLASS_NAME" value="carRacing.domain.CarTest" />
-      <option name="METHOD_NAME" value="carPositionDoesNotMovingTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarTest.carPositionMovingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="workspace.yeonsu.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="carRacing.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="carRacing.domain" />
-      <option name="MAIN_CLASS_NAME" value="carRacing.domain.CarTest" />
-      <option name="METHOD_NAME" value="carPositionMovingTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,17 +149,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SplitStringUtilTest.stringSplitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RentCompanyTest.report" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="workspace.yeonsu.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="carRacing.utils.*" />
+          <option name="PATTERN" value="fuelInjection.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="carRacing.utils" />
-      <option name="MAIN_CLASS_NAME" value="carRacing.utils.SplitStringUtilTest" />
-      <option name="METHOD_NAME" value="stringSplitTest" />
+      <option name="PACKAGE_NAME" value="fuelInjection.domain" />
+      <option name="MAIN_CLASS_NAME" value="fuelInjection.domain.RentCompanyTest" />
+      <option name="METHOD_NAME" value="report" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RentCompanyTest.sameObjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workspace.yeonsu.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fuelInjection.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fuelInjection.domain" />
+      <option name="MAIN_CLASS_NAME" value="fuelInjection.domain.RentCompanyTest" />
+      <option name="METHOD_NAME" value="sameObjectTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -185,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RentCompanyTest.report" />
+        <item itemvalue="Application.fuelInjection.Application" />
+        <item itemvalue="JUnit.RentCompanyTest.sameObjectTest" />
         <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.PositionToDashStringTest.PositionToStringDashStringTest" />
-        <item itemvalue="JUnit.SplitStringUtilTest.stringSplitTest" />
-        <item itemvalue="JUnit.CarTest.carPositionDoesNotMovingTest" />
-        <item itemvalue="JUnit.CarTest.carPositionMovingTest" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +199,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660535903436</updated>
-      <workItem from="1661149627732" duration="13239000" />
+      <workItem from="1661149627732" duration="16584000" />
     </task>
     <servers />
   </component>
