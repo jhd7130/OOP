@@ -23,8 +23,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="package.json" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -108,7 +108,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PositionTest.positionSameTest">
+  <component name="RunManager" selected="JUnit.PositionsTest.positionDuplicationExceptionTest">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.Application" />
       <module name="workspace.yeonsu.main" />
@@ -118,22 +118,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarCompanyTest.carMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="workspace.yeonsu.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fuelInjectionUsingInterface.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fuelInjectionUsingInterface.domain" />
-      <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.domain.CarCompanyTest" />
-      <option name="METHOD_NAME" value="carMemberTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,13 +170,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PositionsTest.positionDuplicationExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workspace.yeonsu.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="positionCalculator.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="positionCalculator.domain" />
+      <option name="MAIN_CLASS_NAME" value="positionCalculator.domain.PositionsTest" />
+      <option name="METHOD_NAME" value="positionDuplicationExceptionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PositionsTest.positionDuplicationExceptionTest" />
         <item itemvalue="JUnit.PositionTest.positionSameTest" />
         <item itemvalue="JUnit.PositionNumberTest.positionExceptionTest" />
         <item itemvalue="JUnit.PositionNumberTest.positionNumberValidTest" />
         <item itemvalue="Application.Application" />
-        <item itemvalue="JUnit.CarCompanyTest.carMemberTest" />
       </list>
     </recent_temporary>
   </component>
