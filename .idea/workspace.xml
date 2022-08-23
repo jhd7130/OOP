@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9d0cc013-b66e-4c2b-b254-641db474b16f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/fuelInjection/domain/RentCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/fuelInjection/domain/RentCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +23,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -39,6 +39,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="YeonFuelInjection" />
+                    <option name="lastUsedInstant" value="1661232097" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
                     <option name="lastUsedInstant" value="1661225747" />
@@ -200,7 +204,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660535903436</updated>
-      <workItem from="1661149627732" duration="21879000" />
+      <workItem from="1661149627732" duration="22699000" />
     </task>
     <servers />
   </component>
