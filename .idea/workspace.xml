@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9d0cc013-b66e-4c2b-b254-641db474b16f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heedoo/src/main/java/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heedoo/src/test/java/TestCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jieun/src/main/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/jieun/src/main/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +104,10 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/heedoo/src/test/java" />
+      <recent name="$PROJECT_DIR$/heedoo/src/main/java" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="fuelInjectionUsingInterface.domain" />
