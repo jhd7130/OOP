@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9d0cc013-b66e-4c2b-b254-641db474b16f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeonsu/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heedoo/src/main/java/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/heedoo/src/test/java/TestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jieun/src/main/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/jieun/src/main/java/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -54,6 +56,14 @@
           </list>
         </option>
       </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="jhd7130" />
+        <option name="repository" value="OOP" />
+      </RepoCoordinatesHolder>
     </option>
   </component>
   <component name="MarkdownSettingsMigration">
@@ -216,7 +226,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="198" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="91" />
+                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="35" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
