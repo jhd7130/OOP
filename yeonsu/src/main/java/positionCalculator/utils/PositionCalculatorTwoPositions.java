@@ -4,7 +4,7 @@ import positionCalculator.domain.Position;
 
 import java.util.List;
 
-public class PositionCalculatorImpl implements PositionCalculator {
+public class PositionCalculatorTwoPositions implements PositionCalculator {
 
     @Override
     public double calculate(List<Position> positions) {
