@@ -1,4 +1,4 @@
-package positionCalculator.utils;
+package positionCalculator.service;
 
 import positionCalculator.domain.Position;
 

@@ -1,6 +1,7 @@
 package fuelInjectionUsingInterface.domain;
 
 import fuelInjectionUsingInterface.utils.CarInfo;
+import fuelInjectionUsingInterface.utils.CarInfoImpl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +27,7 @@ public class CarCompany {
         rentCars.add(Car.from(carName, kilo));
     }
 
-    public String report(CarInfo carInfo) {
+    public String report(CarInfoImpl carInfo) {
         return rentCars.stream().map(x -> carInfo.carInfo(x)).collect(Collectors.joining());
     }
 }

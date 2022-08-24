@@ -3,6 +3,8 @@ package positionCalculator.utils;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import positionCalculator.domain.Position;
+import positionCalculator.service.PositionCalculator;
+import positionCalculator.service.PositionCalculatorTwoPositions;
 
 import java.text.DecimalFormat;
 import java.util.Arrays;
