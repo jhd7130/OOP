@@ -1,6 +1,5 @@
 package fuelInjectionUsingInterface;
 
-import fuelInjectionUsingInterface.domain.Car;
 import fuelInjectionUsingInterface.domain.CarCompany;
 import fuelInjectionUsingInterface.utils.CarInfoImpl;
 

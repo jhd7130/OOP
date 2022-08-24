@@ -6,7 +6,6 @@ import positionCalculator.utils.ConsoleOutMessage;
 import positionCalculator.utils.StringUtils;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class DistanceCalculator {
 
@@ -16,6 +15,6 @@ public class DistanceCalculator {
         List<Integer> wholePositionList = StringUtils.extractInteger(ConsoleIn.userInput());
 
         Positions positions = new Positions(wholePositionList);
-        positions.calculateBetweenPosition();
+        positions.printResult();
     }
 }

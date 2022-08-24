@@ -12,26 +12,23 @@ public class Positions {
 
     private List<Position> positions;
 
-    /*public Positions(List<Position> paramPositions) {
-        positionsInjection(paramPositions);
-
-        if (positions.size() != positions.stream().distinct().collect(Collectors.toList()).size()) {
-            throw new PositionDuplicationException("중복된 값이 존재합니다.");
-        }
-    }*/
-
     public Positions(List<Integer> numbers) {
 
 
-        if (numbers.size() < ConsoleOut.AMOUNT_OF_POINTER_MIN || numbers.size() > ConsoleOut.AMOUNT_OF_POINTER_MAX) {
+        if (isNotAmountOfPointers(numbers)) {
             throw new AmountOfPointersException(ConsoleOut.AMOUNT_OF_POINTERS_EXCEPTION_MESSAGE);
         }
 
         positionsInjectionIntegerList(numbers);
 
-        if (positions.size() != positions.stream().distinct().collect(Collectors.toList()).size()) {
-            throw new PositionDuplicationException("중복된 값이 존재합니다.");
+        if (isSamePositions()) {
+            throw new PositionDuplicationException(ConsoleOut.POSITION_DUPLICATION_EXCEPTION_MESSAGE);
         }
+    }
+
+    public void printResult() {
+        PrintResult printResult = new PrintResult();
+        printResult.report(positions);
     }
 
     private void positionsInjectionIntegerList(List<Integer> positionsList) {
@@ -41,16 +38,11 @@ public class Positions {
         }
     }
 
-    private void positionsInjection(List<Position> paramPositions) {
-        positions = new ArrayList<>();
-        for (Position eachPosition : paramPositions) {
-            positions.add(eachPosition);
-        }
+    private boolean isSamePositions() {
+        return positions.size() != positions.stream().distinct().collect(Collectors.toList()).size();
     }
 
-    public void calculateBetweenPosition() {
-        PrintResult printResult = new PrintResult();
-        printResult.report(positions);
-
+    private boolean isNotAmountOfPointers(List<Integer> numbers) {
+        return numbers.size() < ConsoleOut.AMOUNT_OF_POINTER_MIN || numbers.size() > ConsoleOut.AMOUNT_OF_POINTER_MAX;
     }
 }

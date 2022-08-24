@@ -1,27 +1,30 @@
 package positionCalculator.domain;
 
+import positionCalculator.service.PositionCalculatorFourPositions;
+import positionCalculator.service.PositionCalculatorThreePositions;
 import positionCalculator.utils.ConsoleOut;
-import positionCalculator.utils.PositionCalculator;
-import positionCalculator.utils.PositionCalculatorImpl;
+import positionCalculator.service.PositionCalculator;
+import positionCalculator.service.PositionCalculatorTwoPositions;
 
 import java.util.List;
 
 public class PrintResult {
 
-    private static double result = 0;
+    private static PositionCalculator positionCalculator;
+
     public void report(List<Position> positions) {
-        if (isTwoPoints(positions)) {
-            result = calculateBetweenPosition(positions);
+        if (PositionStatus.isTwo(positions.size())) {
+            calculatePosition(positions, new PositionCalculatorTwoPositions());
         }
-        System.out.println(ConsoleOut.TWO_POSITION_DISTANCE_INTRODUCING_MESSAGE + String.format("%.4f", result));
-    }
+        if (PositionStatus.isThree(positions.size())) {
+            calculatePosition(positions, new PositionCalculatorThreePositions());
+        }
+        if (PositionStatus.isFour(positions.size())) {
+            calculatePosition(positions, new PositionCalculatorFourPositions());
+        }
 
-    private boolean isTwoPoints(List<Position> positions) {
-        return positions.size() == 2;
     }
-
-    private double calculateBetweenPosition(List<Position> positions) {
-        PositionCalculator calculator = new PositionCalculatorImpl();
-        return calculator.calculate(positions);
+    private void calculatePosition(List<Position> positions, PositionCalculator positionCalculator) {
+        System.out.println(ConsoleOut.TWO_POSITION_DISTANCE_INTRODUCING_MESSAGE + String.format("%.4f", positionCalculator.calculate(positions)));
     }
 }

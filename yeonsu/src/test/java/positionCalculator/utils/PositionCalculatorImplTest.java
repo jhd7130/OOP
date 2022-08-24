@@ -3,18 +3,18 @@ package positionCalculator.utils;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import positionCalculator.domain.Position;
+import positionCalculator.service.PositionCalculator;
+import positionCalculator.service.PositionCalculatorTwoPositions;
 
 import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class PositionCalculatorImplTest {
 
     @Test
     public void distanceCalculationTest() throws Exception {
-        PositionCalculator calculator = new PositionCalculatorImpl();
+        PositionCalculator calculator = new PositionCalculatorTwoPositions();
         //given
         Position position1 = Position.from(1, 1);
         Position position2 = Position.from(4, 5);
