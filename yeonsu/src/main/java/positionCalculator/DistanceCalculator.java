@@ -14,6 +14,7 @@ public class DistanceCalculator {
         ConsoleOutMessage.GAME_START_MESSAGE.print();
 
         List<Integer> wholePositionList = StringUtils.extractInteger(ConsoleIn.userInput());
+
         Positions positions = new Positions(wholePositionList);
         positions.calculateBetweenPosition();
     }

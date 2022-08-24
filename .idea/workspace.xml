@@ -6,10 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="9d0cc013-b66e-4c2b-b254-641db474b16f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/DistanceCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/DistanceCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/domain/Positions.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/domain/Positions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/domain/PrintResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/domain/PrintResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/utils/ConsoleOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/utils/ConsoleOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/utils/PositionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/utils/PositionCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/utils/PositionCalculatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/main/java/positionCalculator/utils/PositionCalculatorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeonsu/src/test/java/positionCalculator/domain/PositionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/test/java/positionCalculator/domain/PositionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeonsu/src/test/java/positionCalculator/utils/PositionCalculatorImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeonsu/src/test/java/positionCalculator/utils/PositionCalculatorImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +25,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="workspace" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -90,6 +112,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="positionCalculator.utils" />
       <recent name="positionCalculator.domain" />
       <recent name="fuelInjection.domain" />
       <recent name="baseball" />
@@ -113,16 +136,35 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.positionCalculator.Application">
-    <configuration name="positionCalculator.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="positionCalculator.Application" />
-      <module name="workspace.yeonsu.main" />
+  <component name="RunManager" selected="JUnit.PositionsTest.amountOfPointerJudgementExceptionTest">
+    <configuration name="JudgementSizeOfPointsUtilTest.amountOfPointerJudgementExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workspace.yeonsu.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="positionCalculator.*" />
+          <option name="PATTERN" value="positionCalculator.exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="positionCalculator.utils" />
+      <option name="MAIN_CLASS_NAME" value="positionCalculator.utils.JudgementSizeOfPointsUtilTest" />
+      <option name="METHOD_NAME" value="amountOfPointerJudgementExceptionTest(int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JudgementSizeOfPointsUtilTest.amountOfPointerJudgementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workspace.yeonsu.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="positionCalculator.exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="positionCalculator.utils" />
+      <option name="MAIN_CLASS_NAME" value="positionCalculator.utils.JudgementSizeOfPointsUtilTest" />
+      <option name="METHOD_NAME" value="amountOfPointerJudgementTest(int)" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,7 +173,7 @@
       <module name="workspace.yeonsu.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="positionCalculator.utils.*" />
+          <option name="PATTERN" value="positionCalculator.exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,23 +185,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositionTest.positionSameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="workspace.yeonsu.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="positionCalculator.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="positionCalculator.domain" />
-      <option name="MAIN_CLASS_NAME" value="positionCalculator.domain.PositionTest" />
-      <option name="METHOD_NAME" value="positionSameTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PositionsTest.positionDuplicationExceptionIntegerListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PositionsTest.amountOfPointerJudgementExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="workspace.yeonsu.test" />
       <extension name="coverage">
         <pattern>
@@ -169,13 +195,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="positionCalculator.domain" />
       <option name="MAIN_CLASS_NAME" value="positionCalculator.domain.PositionsTest" />
-      <option name="METHOD_NAME" value="positionDuplicationExceptionIntegerListTest" />
+      <option name="METHOD_NAME" value="amountOfPointerJudgementExceptionTest(int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositionsTest.positionDuplicationExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PositionsTest.amountOfPointerJudgementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="workspace.yeonsu.test" />
       <extension name="coverage">
         <pattern>
@@ -185,7 +211,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="positionCalculator.domain" />
       <option name="MAIN_CLASS_NAME" value="positionCalculator.domain.PositionsTest" />
-      <option name="METHOD_NAME" value="positionDuplicationExceptionTest" />
+      <option name="METHOD_NAME" value="amountOfPointerJudgementTest(int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.positionCalculator.Application" />
-        <item itemvalue="JUnit.PositionsTest.positionDuplicationExceptionIntegerListTest" />
+        <item itemvalue="JUnit.PositionsTest.amountOfPointerJudgementExceptionTest" />
+        <item itemvalue="JUnit.PositionsTest.amountOfPointerJudgementTest" />
+        <item itemvalue="JUnit.JudgementSizeOfPointsUtilTest.amountOfPointerJudgementTest" />
+        <item itemvalue="JUnit.JudgementSizeOfPointsUtilTest.amountOfPointerJudgementExceptionTest" />
         <item itemvalue="JUnit.PositionCalculatorImplTest.distanceCalculationTest" />
-        <item itemvalue="JUnit.PositionsTest.positionDuplicationExceptionTest" />
-        <item itemvalue="JUnit.PositionTest.positionSameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -210,6 +236,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660535903436</updated>
       <workItem from="1661149627732" duration="22699000" />
+      <workItem from="1661310843052" duration="4241000" />
     </task>
     <servers />
   </component>

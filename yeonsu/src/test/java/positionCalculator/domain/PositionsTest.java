@@ -3,39 +3,34 @@ package positionCalculator.domain;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+import positionCalculator.exception.AmountOfPointersException;
 import positionCalculator.exception.PositionDuplicationException;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
+import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PositionsTest {
 
-
-/*
-    @DisplayName("중복된 두 개의 위치 값이 주어지면 예외 발생")
-    @Test
-    public void positionDuplicationExceptionTest() throws Exception {
-        //given
-        Position position1 = Position.from(10, 10);
-        Position position2 = Position.from(10, 10);
-
-        //when
-        List<Position> positions = Arrays.asList(position1, position2);
-
-        //then
-        Assertions.assertThatThrownBy(() -> new Positions(positions))
-                .isInstanceOf(PositionDuplicationException.class)
-                .hasMessage("중복된 값이 존재합니다.");
+    @ParameterizedTest
+    @ValueSource(ints = {1,5})
+    public void amountOfPointerJudgementExceptionTest(int input) throws Exception {
+        List<Integer> integerList = IntStream.of(new int[input]).boxed().collect(Collectors.toList());
+        assertThatThrownBy(() -> new Positions(integerList))
+                .isInstanceOf(AmountOfPointersException.class);
     }
-*/
 
     @Test
     public void positionDuplicationExceptionIntegerListTest() throws Exception {
         List<Integer> list = Arrays.asList(10, 10, 10, 10);
-
         assertThatThrownBy(() -> new Positions(list))
                 .isInstanceOf(PositionDuplicationException.class);
     }

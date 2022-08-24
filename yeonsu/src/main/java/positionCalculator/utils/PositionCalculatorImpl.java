@@ -2,10 +2,14 @@ package positionCalculator.utils;
 
 import positionCalculator.domain.Position;
 
+import java.util.List;
+
 public class PositionCalculatorImpl implements PositionCalculator {
 
     @Override
-    public double calculate(Position p1, Position p2) {
+    public double calculate(List<Position> positions) {
+        Position p1 = positions.get(0);
+        Position p2 = positions.get(1);
         return sqrt(pow(p1.currentXPos(), p2.currentXPos()) + pow(p1.currentYPos(), p2.currentYPos()));
     }
 

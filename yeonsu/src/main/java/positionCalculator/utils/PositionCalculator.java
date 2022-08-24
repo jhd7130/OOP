@@ -2,7 +2,9 @@ package positionCalculator.utils;
 
 import positionCalculator.domain.Position;
 
+import java.util.List;
+
 public interface PositionCalculator {
 
-    double calculate(Position p1, Position p2);
+    double calculate(List<Position> positions);
 }

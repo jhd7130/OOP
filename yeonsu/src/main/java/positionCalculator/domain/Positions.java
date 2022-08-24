@@ -1,5 +1,6 @@
 package positionCalculator.domain;
 
+import positionCalculator.exception.AmountOfPointersException;
 import positionCalculator.exception.PositionDuplicationException;
 import positionCalculator.utils.ConsoleOut;
 
@@ -19,8 +20,14 @@ public class Positions {
         }
     }*/
 
-    public Positions(List<Integer> integers) {
-        positionsInjectionIntegerList(integers);
+    public Positions(List<Integer> numbers) {
+
+
+        if (numbers.size() < ConsoleOut.AMOUNT_OF_POINTER_MIN || numbers.size() > ConsoleOut.AMOUNT_OF_POINTER_MAX) {
+            throw new AmountOfPointersException(ConsoleOut.AMOUNT_OF_POINTERS_EXCEPTION_MESSAGE);
+        }
+
+        positionsInjectionIntegerList(numbers);
 
         if (positions.size() != positions.stream().distinct().collect(Collectors.toList()).size()) {
             throw new PositionDuplicationException("중복된 값이 존재합니다.");
@@ -43,7 +50,7 @@ public class Positions {
 
     public void calculateBetweenPosition() {
         PrintResult printResult = new PrintResult();
-        String result = printResult.report(positions);
-        System.out.println(ConsoleOut.TWO_POSITION_DISTANCE_INTRODUCING_MESSAGE + result);
+        printResult.report(positions);
+
     }
 }
