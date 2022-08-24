@@ -118,7 +118,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="JUnit.coordinate in workspace.heedoo.test">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.Application" />
       <module name="workspace.yeonsu.main" />
@@ -180,29 +180,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DoubleToStringTest.typeChangeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="workspace.yeonsu.test" />
+    <configuration name="coordinate in workspace.heedoo.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workspace.heedoo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fuelInjectionUsingInterface.utils.*" />
+          <option name="PATTERN" value="coordinate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fuelInjectionUsingInterface.utils" />
-      <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.utils.DoubleToStringTest" />
-      <option name="METHOD_NAME" value="typeChangeTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="coordinate" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.coordinate in workspace.heedoo.test" />
         <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.CarCompanyTest.carMemberTest" />
         <item itemvalue="JUnit.CarNameTest.carNameExceptionTest" />
         <item itemvalue="JUnit.CarNameTest.carNameInValidation" />
-        <item itemvalue="JUnit.DoubleToStringTest.typeChangeTest" />
       </list>
     </recent_temporary>
   </component>
