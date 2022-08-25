@@ -23,6 +23,10 @@ public class Pointers {
         }
     }
 
+    List<Pointer> currentPointers() {
+        return pointers;
+    }
+
     private boolean isNotSamePointer() {
         return this.pointers.size() != this.pointers.stream().distinct().collect(Collectors.toList()).size();
     }
