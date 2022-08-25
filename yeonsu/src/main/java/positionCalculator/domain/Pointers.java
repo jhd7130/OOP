@@ -1,5 +1,6 @@
 package positionCalculator.domain;
 
+import positionCalculator.exception.ImPossiblePointerSizeException;
 import positionCalculator.exception.SamePointerException;
 import positionCalculator.service.ConsoleOut;
 
@@ -16,6 +17,9 @@ public class Pointers {
         settingPointers(pointers);
         if (isNotSamePointer()) {
             throw new SamePointerException(ConsoleOut.POSITION_SAME_POINTER_EXCEPTION_MESSAGE);
+        }
+        if (this.pointers.size() < 2 || this.pointers.size() > 4) {
+            throw new ImPossiblePointerSizeException(ConsoleOut.POSITION_SIZE_EXCEPTION_MESSAGE);
         }
     }
 

@@ -2,6 +2,7 @@ package positionCalculator.domain;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import positionCalculator.exception.ImPossiblePointerSizeException;
 import positionCalculator.exception.SamePointerException;
 
 import java.util.Arrays;
@@ -32,5 +33,12 @@ class PointersTest {
         List<Integer> integerList = Arrays.asList(1, 2, 1, 2);
         assertThatThrownBy(() -> Pointers.of(integerList))
                 .isInstanceOf(SamePointerException.class);
+    }
+
+    @Test
+    public void pointerSizeExceptionTest() throws Exception {
+        List<Integer> integerList = Arrays.asList(1, 2);
+        assertThatThrownBy(() -> Pointers.of(integerList))
+                .isInstanceOf(ImPossiblePointerSizeException.class);
     }
 }

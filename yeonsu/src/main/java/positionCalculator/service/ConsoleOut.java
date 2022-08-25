@@ -9,4 +9,5 @@ public class ConsoleOut {
     // String type print Message or Exception Message
     public static final String POSITION_OUT_OF_RANGE_EXCEPTION_MESSAGE = "좌표는 0부터 24 사이의 값을 입력해야 합니다.";
     public static final String POSITION_SAME_POINTER_EXCEPTION_MESSAGE = "같은 좌표는 올 수 없습니다.";
+    public static final String POSITION_SIZE_EXCEPTION_MESSAGE = "좌표 개수는 2이상 4이하 입니다.";
 }
