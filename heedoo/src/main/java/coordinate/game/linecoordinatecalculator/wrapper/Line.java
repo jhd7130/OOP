@@ -13,7 +13,7 @@ public class Line {
     private final Coordinate coordinate1;
     private final Coordinate coordinate;
 
-    public Line(Coordinate coordinate, Coordinate coordinate1) {
+    private Line(Coordinate coordinate, Coordinate coordinate1) {
         this.coordinate = coordinate;
         this.coordinate1 = coordinate1;
     }

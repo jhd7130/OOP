@@ -4,18 +4,16 @@ import coordinate.global.CalculatorType;
 import coordinate.global.CorrdinateCalculatorFactory;
 import coordinate.global.console.GlobalInput;
 
-/**
- * Role :
- * Responsibility :
- * Cooperation with :
- **/
 public class CoordinateCalculatorApplication {
     public static void main(String[] args) {
-        System.out.println("어떤 계산기를 이용하시겠습니까? 원하는 계산기의 번호를 입력해주세요.");
-        System.out.println("1. 두점 사이의 거리");
-        System.out.println("2. 사각형의 면적");
-        System.out.println("3. 삼각형의 면적");
+        GlobalInput.printNavigateSign();
         int num = GlobalInput.inputCalculatorType();
         CoordinateCalculator coordinateCalculator = CorrdinateCalculatorFactory.create(CalculatorType.valueOfLabel(num));
+        System.out.println("좌표입력");
+
+        String input = GlobalInput.inputCoordinates();
+        coordinateCalculator.print(input);
+
+        // 좌표 입력 후 그림 출력 -->
     }
 }

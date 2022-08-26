@@ -8,4 +8,8 @@ import coordinate.CoordinateCalculator;
  * Cooperation with :
  **/
 public class SquareCoordinateCalculator implements CoordinateCalculator {
+    @Override
+    public void print(String coordinate) {
+
+    }
 }

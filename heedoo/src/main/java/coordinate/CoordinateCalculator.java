@@ -6,4 +6,5 @@ package coordinate;
  * Cooperation with :
  **/
 public interface CoordinateCalculator {
+    void print(String coordinate);
 }

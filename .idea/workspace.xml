@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d0cc013-b66e-4c2b-b254-641db474b16f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heedoo/src/main/java/coordinate/CoordinateCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/heedoo/src/main/java/coordinate/CoordinateCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heedoo/src/main/java/coordinate/CoordinateCalculatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/heedoo/src/main/java/coordinate/CoordinateCalculatorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heedoo/src/main/java/coordinate/game/linecoordinatecalculator/LineCoordinateCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/heedoo/src/main/java/coordinate/game/linecoordinatecalculator/LineCoordinateCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heedoo/src/main/java/coordinate/game/linecoordinatecalculator/wrapper/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/heedoo/src/main/java/coordinate/game/linecoordinatecalculator/wrapper/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heedoo/src/main/java/coordinate/game/squarecoordinatecalculator/SquareCoordinateCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/heedoo/src/main/java/coordinate/game/squarecoordinatecalculator/SquareCoordinateCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heedoo/src/main/java/coordinate/game/trianglecoordinatecalculator/TriangleCoordinateCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/heedoo/src/main/java/coordinate/game/trianglecoordinatecalculator/TriangleCoordinateCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heedoo/src/main/java/coordinate/global/console/GlobalInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/heedoo/src/main/java/coordinate/global/console/GlobalInput.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +25,25 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -120,13 +139,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.coordinate in workspace.heedoo.test">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.Application" />
-      <module name="workspace.yeonsu.main" />
+  <component name="RunManager" selected="JUnit.PatternTest.test">
+    <configuration name="CoordinateCalculatorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coordinate.CoordinateCalculatorApplication" />
+      <module name="workspace.heedoo.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fuelInjectionUsingInterface.*" />
+          <option name="PATTERN" value="coordinate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,49 +153,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarCompanyTest.carMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="workspace.yeonsu.test" />
+    <configuration name="CoordinatesTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workspace.heedoo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fuelInjectionUsingInterface.domain.*" />
+          <option name="PATTERN" value="coordinate.linecoordinatecalculator.wrapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fuelInjectionUsingInterface.domain" />
-      <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.domain.CarCompanyTest" />
-      <option name="METHOD_NAME" value="carMemberTest" />
+      <option name="PACKAGE_NAME" value="coordinate.linecoordinatecalculator.wrapper" />
+      <option name="MAIN_CLASS_NAME" value="coordinate.linecoordinatecalculator.wrapper.CoordinatesTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarNameTest.carNameExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="workspace.yeonsu.test" />
+    <configuration name="LineFactoryTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workspace.heedoo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fuelInjectionUsingInterface.wrapper.*" />
+          <option name="PATTERN" value="coordinate.global.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fuelInjectionUsingInterface.wrapper" />
-      <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.wrapper.CarNameTest" />
-      <option name="METHOD_NAME" value="carNameExceptionTest" />
+      <option name="PACKAGE_NAME" value="coordinate.global.util" />
+      <option name="MAIN_CLASS_NAME" value="coordinate.global.util.LineFactoryTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarNameTest.carNameInValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="workspace.yeonsu.test" />
+    <configuration name="PatternTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workspace.heedoo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fuelInjectionUsingInterface.wrapper.*" />
+          <option name="PATTERN" value="coordinate.global.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fuelInjectionUsingInterface.wrapper" />
-      <option name="MAIN_CLASS_NAME" value="fuelInjectionUsingInterface.wrapper.CarNameTest" />
-      <option name="METHOD_NAME" value="carNameInValidation" />
+      <option name="PACKAGE_NAME" value="coordinate.global" />
+      <option name="MAIN_CLASS_NAME" value="coordinate.global.PatternTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,11 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PatternTest.test" />
+        <item itemvalue="Application.CoordinateCalculatorApplication" />
+        <item itemvalue="JUnit.CoordinatesTest.test" />
+        <item itemvalue="JUnit.LineFactoryTest.test" />
         <item itemvalue="JUnit.coordinate in workspace.heedoo.test" />
-        <item itemvalue="Application.Application" />
-        <item itemvalue="JUnit.CarCompanyTest.carMemberTest" />
-        <item itemvalue="JUnit.CarNameTest.carNameExceptionTest" />
-        <item itemvalue="JUnit.CarNameTest.carNameInValidation" />
       </list>
     </recent_temporary>
   </component>
@@ -239,6 +258,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/heedoo/src/test/java/coordinate/global/PatternTest.java</url>
+          <line>16</line>
+          <properties class="coordinate.global.PatternTest" method="test">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
