@@ -3,10 +3,7 @@ package blackJack.domain;
 import blackJack.domain.wrapper.Shape;
 import blackJack.infra.DomainUtil;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class Deck {
 
@@ -15,6 +12,7 @@ public class Deck {
     private Deck() {
         deck = new ArrayList<>();
         deckSetting();
+        deckShuffle();
     }
 
     public static Deck init() {
@@ -29,6 +27,9 @@ public class Deck {
                 deck.add(Card.from(next, DomainUtil.cardNumbers.get(i)));
             }
         }
+    }
+    private void deckShuffle() {
+        Collections.shuffle(deck);
     }
 
     public void printDeck() {
