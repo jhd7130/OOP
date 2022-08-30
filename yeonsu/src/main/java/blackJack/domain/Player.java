@@ -12,6 +12,7 @@ public class Player implements Gamer {
     private String playerName;
     private List<Card> cards;
     private Money money;
+    private int cardResult = 0;
 
     private Player(String playerName) {
         this.playerName = playerName;
@@ -36,7 +37,8 @@ public class Player implements Gamer {
         return cards;
     }
 
-    public String currentPlayerName() {
+    @Override
+    public String currentName() {
         return playerName;
     }
 

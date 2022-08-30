@@ -7,5 +7,8 @@ public class ConsoleOut {
     public static final String PLAYER_BATTING_MESSAGE = "의 배팅 금액은?";
     public static final String DEALER_NAME = "딜러와 ";
     public static final String GIVE_TWO_CARDS_MESSAGE = " 에게 각 2장씩의 카드를 나누었습니다.";
+
+    public static final String ONE_MORE_CARD_MESSAGE = "는 한장의 카드를 더 받겠습니까?(예는 y, 아니오는 n)";
     public static final int INIT_CARD_AMOUNT = 2;
+    public static final String DEALER = "Dealer";
 }

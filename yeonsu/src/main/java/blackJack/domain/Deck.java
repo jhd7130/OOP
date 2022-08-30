@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Deck {
 
-    private List<Card> deck;
+    private static List<Card> deck;
     private int counter = 0;
 
     private Deck() {
@@ -37,7 +37,7 @@ public class Deck {
         deck.stream().forEach(card -> System.out.println(card.currentCard()));
     }
 
-    public Card gameInitHandOutCards() {
+    public static Card gameInitHandOutCards() {
         Card card = deck.get(0);
         deck.remove(card);
         return card;

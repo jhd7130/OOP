@@ -14,6 +14,14 @@ public class Judgement {
         this.players = players;
         settingInit();
         print();
+        questionnaire(dealer);
+    }
+
+    private void questionnaire(Dealer dealer) {
+        for (Player player : this.players.currentPlayers()) {
+            QuestionToGamers.question(player);
+        }
+        QuestionToGamers.question(dealer);
     }
 
     public static Judgement of(Deck deck, Dealer dealer, Players players) {

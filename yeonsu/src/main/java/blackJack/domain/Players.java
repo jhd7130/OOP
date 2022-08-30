@@ -27,7 +27,7 @@ public class Players {
     public String playerNameMessage() {
         StringBuffer stringBuffer = new StringBuffer();
         for (int index = 0; index < players.size(); index++) {
-            stringBuffer.append(players.get(index).currentPlayerName());
+            stringBuffer.append(players.get(index).currentName());
             if (index != players.size() - 1) {
                 stringBuffer.append(", ");
             }
