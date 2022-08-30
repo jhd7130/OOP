@@ -7,7 +7,7 @@ import blackJack.infra.ConsoleOut;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Player {
+public class Player implements Gamer {
 
     private String playerName;
     private List<Card> cards;
@@ -23,10 +23,6 @@ public class Player {
         return new Player(playerName);
     }
 
-    public List<Card> currentPlayerCards() {
-        return cards;
-    }
-
     public void playerBattingMoneyMessage() {
         System.out.println(this.playerName + ConsoleOut.PLAYER_BATTING_MESSAGE);
         playerBattingMoney(ConsoleIn.UserInputBattingMoney());
@@ -36,8 +32,22 @@ public class Player {
         money.batting(battingMoney);
     }
 
-    public void getCardFromDealer(Card givenCard) {
+    public List<Card> currentPlayerCards() {
+        return cards;
+    }
 
+    public String currentPlayerName() {
+        return playerName;
+    }
+
+    public void getCard(Card givenCard) {
+        cards.add(givenCard);
+    }
+
+    public void playerCardsPrint() {
+        System.out.print(playerName + " : ");
+        cards.stream().forEach(card -> System.out.print(card.currentCard() + " "));
+        System.out.println();
     }
 
     @Override

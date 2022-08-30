@@ -8,6 +8,7 @@ import java.util.*;
 public class Deck {
 
     private List<Card> deck;
+    private int counter = 0;
 
     private Deck() {
         deck = new ArrayList<>();

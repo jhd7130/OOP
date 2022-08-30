@@ -24,6 +24,17 @@ public class Players {
         players.stream().forEach(Player::playerBattingMoneyMessage);
     }
 
+    public String playerNameMessage() {
+        StringBuffer stringBuffer = new StringBuffer();
+        for (int index = 0; index < players.size(); index++) {
+            stringBuffer.append(players.get(index).currentPlayerName());
+            if (index != players.size() - 1) {
+                stringBuffer.append(", ");
+            }
+        }
+        return stringBuffer.toString();
+    }
+
     private void settingPlayerIntoPlayerCollection(String playersStringName) {
         for (String player : sepPlayerName(playersStringName)) {
             players.add(Player.from(player));
