@@ -19,6 +19,6 @@ public class Card {
     }
 
     public String currentCard() {
-        return cardNumber.currentCardNumber() + " : " + cardShape.currentShape();
+        return cardNumber.currentCardNumber() + ":" + cardShape.currentShape();
     }
 }
