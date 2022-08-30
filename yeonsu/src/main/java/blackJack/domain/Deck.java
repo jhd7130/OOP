@@ -35,4 +35,10 @@ public class Deck {
     public void printDeck() {
         deck.stream().forEach(card -> System.out.println(card.currentCard()));
     }
+
+    public Card gameInitHandOutCards() {
+        Card card = deck.get(0);
+        deck.remove(card);
+        return card;
+    }
 }

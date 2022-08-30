@@ -36,6 +36,9 @@ public class Player {
         money.batting(battingMoney);
     }
 
+    public void getCardFromDealer(Card givenCard) {
+
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -54,5 +57,4 @@ public class Player {
         result = 31 * result + (cards != null ? cards.hashCode() : 0);
         return result;
     }
-
 }
