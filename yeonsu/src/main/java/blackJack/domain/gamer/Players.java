@@ -30,4 +30,8 @@ public class Players {
     public void printPlayersCard() {
         players.stream().forEach(player -> player.printCards());
     }
+
+    public void playerGetMoreCards() {
+        players.stream().forEach(player -> player.getMoreCardOrNot());
+    }
 }

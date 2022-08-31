@@ -12,4 +12,8 @@ public class ConsoleIn {
     public static int PlayerMoneyInput() {
         return scanner.nextInt();
     }
+
+    public static String MoreCardOrNot() {
+        return scanner.nextLine();
+    }
 }

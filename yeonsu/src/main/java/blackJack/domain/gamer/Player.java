@@ -2,6 +2,7 @@ package blackJack.domain.gamer;
 
 import blackJack.domain.Card;
 import blackJack.domain.Deck;
+import blackJack.domain.wrapper.PlayerQuestionnaire;
 import blackJack.util.CalculateCardScore;
 import blackJack.util.ConsoleIn;
 import blackJack.util.ConsoleOut;
@@ -42,6 +43,18 @@ public class Player implements Gamer {
         System.out.print(playerName + " : ");
         playerCards.stream().forEach(card -> System.out.print(card.toString() + " "));
         System.out.println();
+    }
+
+    public void getMoreCardOrNot() {
+        while (true) {
+            System.out.println(playerName + ConsoleOut.PLAYER_MORE_CARD_OR_NOT);
+            if (PlayerQuestionnaire.isRightAnswer(ConsoleIn.MoreCardOrNot())) {
+                printCards();
+                continue;
+            }
+            break;
+        }
+
     }
 
     private void getCard() {

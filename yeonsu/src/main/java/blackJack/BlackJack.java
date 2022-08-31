@@ -15,5 +15,6 @@ public class BlackJack {
         Players players = Players.from(PlayerStringUtil.stringPlayersUsingRegex(ConsoleIn.UserInputNames()));// Setting Players
         Dealer dealer = Dealer.getInstance();
         PlayerStringUtil.GamersInfoPrint(dealer, players);
+        players.playerGetMoreCards();
     }
 }
