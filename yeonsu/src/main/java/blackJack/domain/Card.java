@@ -17,6 +17,14 @@ public class Card {
         return new Card(shape, cardNumber);
     }
 
+    public int currentCardNumberToInteger() {
+        return cardNumber.getCardNumber();
+    }
+
+    public boolean currentCardNumber() {
+        return cardNumber == CardNumber.A;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

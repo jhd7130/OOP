@@ -1,7 +1,7 @@
 package blackJack.domain.wrapper;
 
 public enum CardNumber {
-    A(1),
+    A(11),
     TWO(2),
     THREE(3),
     FOUR(4),
@@ -19,5 +19,9 @@ public enum CardNumber {
 
     CardNumber(int cardNumber) {
         this.cardNumber = cardNumber;
+    }
+
+    public int getCardNumber() {
+        return cardNumber;
     }
 }

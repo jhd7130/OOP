@@ -2,11 +2,13 @@ package blackJack.domain.gamer;
 
 import blackJack.domain.Card;
 
+import java.util.List;
+
 public interface Gamer {
 
     String currentName();
 
-    Card currentCard();
+    List<Card> currentCard();
 
     int currentScore();
 }
