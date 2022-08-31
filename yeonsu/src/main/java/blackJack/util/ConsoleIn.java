@@ -9,4 +9,7 @@ public class ConsoleIn {
         return scanner.nextLine();
     }
 
+    public static int PlayerMoneyInput() {
+        return scanner.nextInt();
+    }
 }

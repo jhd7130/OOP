@@ -25,6 +25,10 @@ public class Card {
         return cardNumber == CardNumber.A;
     }
 
+    public String toString() {
+        return cardNumber.getCardNumber() + shape.toString();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

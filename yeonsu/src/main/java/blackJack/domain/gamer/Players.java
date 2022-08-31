@@ -9,6 +9,10 @@ public class Players {
 
     public Players(List<String> playersStringList) {
         players = new ArrayList<>();
+        settingPlayers(playersStringList);
+    }
+
+    private void settingPlayers(List<String> playersStringList) {
         for (String player : playersStringList) {
             players.add(Player.from(player));
         }
@@ -21,5 +25,9 @@ public class Players {
 
     public List<Player> currentPlayers() {
         return players;
+    }
+
+    public void printPlayersCard() {
+        players.stream().forEach(player -> player.printCards());
     }
 }
