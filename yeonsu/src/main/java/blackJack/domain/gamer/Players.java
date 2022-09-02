@@ -32,6 +32,26 @@ public class Players {
     }
 
     public void playerGetMoreCards() {
-        players.stream().forEach(player -> player.getMoreCardOrNot());
+         players.stream().forEach(player -> player.getMoreCardOrNot());
+    }
+
+    public void printPlayersCardIncludeResult() {
+        players.stream().forEach(player -> player.printCardsIncludeResult());
+    }
+
+    public void playersWinGame() {
+        players.stream().forEach(player -> player.winGame());
+    }
+
+    public void playersLooseGame() {
+        players.stream().forEach(player -> player.looseGame());
+    }
+
+    public void playersMoney() {
+        players.stream().forEach(player -> player.printMoney());
+    }
+
+    public int playersTotalMoneySum() {
+        return players.stream().mapToInt(player -> player.currentMoney()).sum();
     }
 }

@@ -6,11 +6,10 @@ import blackJack.domain.gamer.Players;
 
 import java.util.List;
 import java.util.regex.MatchResult;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class PlayerStringUtil {
+public class GamerStringUtil {
 
     private static String regex = "[a-zA-Z]+";
 
@@ -21,5 +20,10 @@ public class PlayerStringUtil {
     public static void GamersInfoPrint(Dealer dealer, Players players) {
         dealer.printCards();
         players.printPlayersCard();
+    }
+
+    public static void GamersInfoPrintIncludeResult(Dealer dealer, Players players) {
+        dealer.printCardsIncludeResult();
+        players.printPlayersCardIncludeResult();
     }
 }

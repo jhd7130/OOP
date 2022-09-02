@@ -5,9 +5,9 @@ import blackJack.util.ConsoleOut;
 
 public class PlayerQuestionnaire {
 
-    public static boolean isRightAnswer(String answer) {
+    public static boolean isRightAnswer(Character answer) {
         try {
-            if ((answer != "y") && (answer != "n") && (answer != "Y") && (answer != "N")) {
+            if (isYyOrNn(answer)) {
                 throw new PlayerHaveToInputAgainCharYOrN();
             }
         } catch (PlayerHaveToInputAgainCharYOrN e) {
@@ -15,5 +15,9 @@ public class PlayerQuestionnaire {
             return false;
         }
         return true;
+    }
+
+    private static boolean isYyOrNn(Character answer) {
+        return answer != 'Y' && answer != 'y' && answer != 'N' && answer != 'n';
     }
 }
