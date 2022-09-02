@@ -3,12 +3,14 @@ package blackJack.domain.gamer;
 import blackJack.domain.Card;
 import blackJack.domain.Deck;
 import blackJack.domain.wrapper.PlayerQuestionnaire;
+import blackJack.exception.PlayerHaveToInputAgainCharYOrN;
 import blackJack.util.CalculateCardScore;
 import blackJack.util.ConsoleIn;
 import blackJack.util.ConsoleOut;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Player implements Gamer {
 
@@ -45,16 +47,31 @@ public class Player implements Gamer {
         System.out.println();
     }
 
+    public void printCardsIncludeResult() {
+        System.out.print(playerName + " : ");
+        playerCards.stream().forEach(card -> System.out.print(card.toString() + " "));
+        System.out.println("- 현재 카드 합 : " + currentScore());
+    }
+
+    public void printMoney() {
+        System.out.println(playerName + " : " + Money);
+    }
+
     public void getMoreCardOrNot() {
         while (true) {
             System.out.println(playerName + ConsoleOut.PLAYER_MORE_CARD_OR_NOT);
-            if (PlayerQuestionnaire.isRightAnswer(ConsoleIn.MoreCardOrNot())) {
-                printCards();
-                continue;
+            Character answer = ConsoleIn.MoreCardOrNot();
+            if (PlayerQuestionnaire.isRightAnswer(answer)) { // return true or false
+                if (answer == 'Y' || answer == 'y') {
+                    getCard();
+                    printCards();
+                    continue;
+                } else {
+                    break;
+                }
             }
-            break;
+            throw new PlayerHaveToInputAgainCharYOrN(ConsoleOut.PLAYER_INPUT_AGAIN_MESSAGE_EXCEPTION);
         }
-
     }
 
     private void getCard() {
@@ -90,4 +107,17 @@ public class Player implements Gamer {
     public int hashCode() {
         return playerName != null ? playerName.hashCode() : 0;
     }
+
+    public int currentMoney() {
+        return Money;
+    }
+
+    public void winGame() {
+        this.Money = (int) (Money * (1.5));
+    }
+
+    public void looseGame() {
+        this.Money = (-1) * Money;
+    }
+
 }
