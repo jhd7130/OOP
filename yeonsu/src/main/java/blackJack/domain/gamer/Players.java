@@ -52,6 +52,6 @@ public class Players {
     }
 
     public int playersTotalMoneySum() {
-        return players.stream().mapToInt(player -> player.currentMoney()).sum();
+        return (-1) * players.stream().mapToInt(player -> player.currentMoney()).sum();
     }
 }

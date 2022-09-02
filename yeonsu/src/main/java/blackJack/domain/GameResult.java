@@ -11,65 +11,45 @@ public class GameResult {
 
     public static void FinishGame(Dealer dealer, Players players) {
         List<Player> playerList = players.currentPlayers();
-        if (isDealerOverBlackJack(dealer)) {
-            dealerCardOverTheBlackJack(dealer, players);
-        } // 딜러 카드의 합이 21을 넘었을 경우
-
-        if (isDealerHasBlackJack(dealer)) {
+        if (isDealerOverBlackJackNumber(dealer)) {
             playerList.stream().forEach(player -> {
-                if (player.currentScore() != ConsoleOut.BLACK_JACK_NUMBER) {
-                    player.looseGame();
-                }
-            });
-            calculateMoney(dealer, players);
-        } // 딜러 카드가 블랙잭인 경우
-
-        if (isDealerUnderBlackJack(dealer)) {
-            playerList.stream().forEach(player -> {
-                if (isPlayerOverBlackJack(player)) {
-                    player.looseGame();
-                }
-                if (isPlayerUnderBlackJackAndBeatTheDealer(dealer, player)) {
+                if (player.currentScore() <= ConsoleOut.BLACK_JACK_NUMBER) {
                     player.winGame();
                 }
-                player.looseGame();
             });
-            calculateMoney(dealer, players);
-        } // 딜러 카드가 블랙잭 보다 작은 경우
+        } // Dealer가 BlackJack보다 큰 숫자를 가질 때
+
+        if (isDealerEqualToBlackJackNumber(dealer)) {
+            playerList.stream().forEach(player -> {
+                if (player.currentScore() > ConsoleOut.BLACK_JACK_NUMBER || player.currentScore() < ConsoleOut.BLACK_JACK_NUMBER) {
+                    player.looseGame();
+                }
+            });
+        } // Dealer가 BlackJack을 가질 때
+
+        if (isDealerUnderBlackJackNumber(dealer)) {
+            playerList.stream().forEach(player -> {
+                if (player.currentScore() == ConsoleOut.BLACK_JACK_NUMBER || (player.currentScore() < ConsoleOut.BLACK_JACK_NUMBER && player.currentScore() > dealer.currentScore())) {
+                    player.winGame();
+                } else {
+                    player.looseGame();
+                }
+            });
+        } // Dealer가 BlakJack보다 낮을 때
+
+        players.playersMoney();
+        dealer.getTotalMoney(players.playersTotalMoneySum());
     }
 
-    private static boolean isPlayerUnderBlackJackAndBeatTheDealer(Dealer dealer, Player player) {
-        return player.currentScore() <= ConsoleOut.BLACK_JACK_NUMBER && player.currentScore() > dealer.currentScore();
-    }
-
-    private static boolean isPlayerOverBlackJack(Player player) {
-        return player.currentScore() > ConsoleOut.BLACK_JACK_NUMBER;
-    }
-
-    private static boolean isDealerUnderBlackJack(Dealer dealer) {
+    private static boolean isDealerUnderBlackJackNumber(Dealer dealer) {
         return dealer.currentScore() < ConsoleOut.BLACK_JACK_NUMBER;
     }
 
-    private static boolean isDealerHasBlackJack(Dealer dealer) {
+    private static boolean isDealerEqualToBlackJackNumber(Dealer dealer) {
         return dealer.currentScore() == ConsoleOut.BLACK_JACK_NUMBER;
     }
 
-    private static void dealerCardOverTheBlackJack(Dealer dealer, Players players) {
-        players.playersWinGame();
-        calculateMoney(dealer, players);
-    }
-
-    private static void calculateMoney(Dealer dealer, Players players) {
-        players.playersMoney();
-        if (isDealerOverBlackJack(dealer)) {
-            dealer.getTotalMoney((-1) * players.playersTotalMoneySum());
-        }
-        if (isDealerHasBlackJack(dealer) || isDealerUnderBlackJack(dealer)) {
-            dealer.getTotalMoney(players.playersTotalMoneySum());
-        }
-    }
-
-    private static boolean isDealerOverBlackJack(Dealer dealer) {
+    private static boolean isDealerOverBlackJackNumber(Dealer dealer) {
         return dealer.currentScore() > ConsoleOut.BLACK_JACK_NUMBER;
     }
 }
